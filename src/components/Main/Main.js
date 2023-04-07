@@ -1,9 +1,9 @@
-import { Typography } from "@mui/material";
+import HeaderTabs from "../HeaderTabs/HeaderTabs";
 
 const Main = () => {
   return (
     <>
-      <Typography variant="h1">Main</Typography>
+      <HeaderTabs />
     </>
   );
 };
