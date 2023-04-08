@@ -3,6 +3,8 @@ import { TabContext, TabList, TabPanel } from "@mui/lab";
 import { useState } from "react";
 import FavoriteIcon from "@mui/icons-material/Favorite";
 import { tabsClasses } from "@mui/material/Tabs";
+import SettingsIcon from '@mui/icons-material/Settings';
+import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
 
 const HeaderTabs = () => {
   const [value, setValue] = useState("1");
@@ -11,6 +13,7 @@ const HeaderTabs = () => {
     setValue(newValue);
   };
   return (
+    <div style={{display:"flex"}}>
     <Box sx={{ width: "92%" }}>
       <TabContext value={value}>
         <Box
@@ -166,7 +169,13 @@ const HeaderTabs = () => {
         <TabPanel value="4">Item Four</TabPanel>
       </TabContext>
     </Box>
+      <Box style={{ marginTop:'20px'}}>
+      <ArrowDropDownIcon sx={{backgroundColor:"#c5e5df", marginRight:'5px'}}/>
+      <SettingsIcon sx={{backgroundColor:"#c5e5df"}}/>
+      </Box>
+      </div>
   );
 };
 
 export default HeaderTabs;
+

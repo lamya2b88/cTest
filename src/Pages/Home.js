@@ -4,7 +4,7 @@ import Main from "../components/Main/Main";
 
 const HomePage = () => {
   return (
-    <>
+    <div style={{ backgroundColor:"#ddf2f1"}}>
       <Grid container spacing={0.5}>
         <Grid item xs={3}>
           <Sidebar />
@@ -13,7 +13,7 @@ const HomePage = () => {
           <Main />
         </Grid>
       </Grid>
-    </>
+    </div>
   );
 };
 
